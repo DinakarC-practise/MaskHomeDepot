@@ -9,7 +9,7 @@ public class MaskEmail {
     System.out.println("Enter a valid Email address:");
     String str = sc.nextLine();
     if (null != maskString(str)) {
-      System.out.println("The masked number is: " + maskString(str));
+      System.out.println("The masked email is: " + maskString(str));
     } else {
       System.out.println("ENTER VALID EMAIL ADDRESS");
     }
@@ -28,7 +28,7 @@ public class MaskEmail {
     }
     return result;
   }
-
+//check for validating email
   public static boolean isValid(String email) {
     boolean result = false;
     if (email.substring(0, email.indexOf("@")).length() > 2) {
